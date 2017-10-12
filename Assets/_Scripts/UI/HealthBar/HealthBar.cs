@@ -10,8 +10,8 @@ public class HealthBar : MonoBehaviour
 
     public void Start()
     {
-        fill = transform.FindChild("Fill Area").GetComponentInChildren<Image>();
-        background = transform.FindChild("Background").GetComponent<Image>();
+        fill = transform.Find("Fill Area").GetComponentInChildren<Image>();
+        background = transform.Find("Background").GetComponent<Image>();
     }
 
     public void Update()
